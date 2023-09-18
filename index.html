@@ -7,35 +7,260 @@
     <title>Historia Interactiva</title>
 	<link rel="stylesheet" type="text/css" href="./src/css/main.css">
 	<meta charset="utf-8">
-	<meta name="keywords" content="historia interactiva, interactive story, videojuego de aventura, adventure game">        <!--(Esto son keywords para el SEO)-->
+	<meta name="keywords" content="historia interactiva, interactive story, videojuego de aventura, adventure game">
+    <!--(Esto son keywords para el SEO)-->
 	<meta name="description" content="Para personas que busquen una experiencia tranquila, que les gusten las historias fantasticas.">
 	<!--(Esta es la descripcion de la pagina)-->
     <meta name="author" content="Rey Valentín Arias Pérez, Daniel Alejandro Arango Echeverri, Adrián Saldarriaga Marín, Nicolás Vélez Ramírez">
 	<meta name="robots" content="index">
-	<link rel="icon" href="./src/img/web-icon.png">
+	<link rel="icon" href="./src/img/logo-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="./src/index.js"></script>
-
-    <nav>
-        <img src="./src/img/web-icon.png" class="logo" alt="logoGame">
+    <!-- Main Screen -->
+    <div class="container">
+        <div id="mainScreen">
+            <div class="logo">
+                <img src="./src/img/iso-icon.png" alt="">
+            </div>
+            <div id="gameName">
+                <h1 class="title">Historia interactiva</h1>
+            </div>
+    
+            <div id="dropDown">
+                <button><img src="./src/img/menu-icon.png" alt="Dropdown button"></button>
+            </div>
+    
+            <div id="play">
+                <button><img src="./src/img/play-icon.png" alt="Play button"></button>
+            </div>
+        </div>
+    </div>
+    <!-- Advertisement -->
+    <div id="advertisement">
+        <div class="logo">
+            <img src="./src/img/iso-icon.png" alt="">
+        </div>
         
-        <h1 class="title">Titulo juego</h1>
-
-        <div class="menu">
-            <button><img src="./src/img/menu-icon.png" alt="menu button"></button>
+        <div id="titleA">
+            <h2 class="title">Anuncio</h2>
+        </div>
+        
+        <div id="rotate">
+            <img src="./src/img/rotate-icon.png" alt="Rotate icon">
         </div>
 
-        <ul>
-            <li><a href="./aboutUs.html">About us</a></li>
-            <li><a href="./contactUs.html">Contact us</a></li>
-            <li><a href="./credits.html">Credits</a></li>
-        </ul>
-    </nav>
+        <div id="pagraph">
+            <p id="messageA">Esta experiencia esta diseñada para ser disfrutada de forma horizontal, le recomendamos rotar su dispositivo para poder continuar con la experiencia.</p>
+        </div>
+    </div>
+    <!-- About Us -->
+    <div class="container">
+        <div id="aboutUs">
+            <div class="logo">
+                <img src="./src/img/iso-icon.png" alt="">
+            </div>
+
+            <div id="titleAU">
+                <h2 class="title">Sobre nosotros</h2>
+            </div>
     
-    <section class="mainMenu">
-        <h2>Titulo juego</h2>
-        <button><img src="./src/img/play-icon.png" class="play" alt="Play button"></button>
-    </section>
+            <div id="nameRey">
+                <h3 class="subtitle">Rey Valentín Arias Pérez</h3>
+            </div>
+            
+            <div id="nameDaniel">
+                <h3 class="subtitle">Daniel Alejandro Arango Echeverri</h3>
+            </div>
+            
+            <div id="nameAdrian">
+                <h3 class="subtitle">Adrián Saldarriaga Marín</h3>
+            </div>
+            
+            <div id="nameNicolas">
+                <h3 class="subtitle">Nicolás Vélez Ramírez</h3>
+            </div>
+            
+            <div id="photoRey">
+                <img src="./src/img/place-holder-icon.png" class="photos" alt="photo Rey Valentín arias Pérez photo">
+            </div>
+            
+            <div id="photoDaniel">
+                <img src="./src/img/place-holder-icon.png" class="photos" alt="Daniel Alejandro Arango Echeverri photo">
+            </div>
+            
+            <div id="photoAdrian">
+                <img src="./src/img/place-holder-icon.png" class="photos" alt="Adrián Saldarriaga Marín photo">
+            </div>
+            
+            <div id="photoNicolas">
+                <img src="./src/img/place-holder-icon.png" class="photos" alt="Nicolás Vélez Ramírez photo">
+            </div>
+            
+            <div id="pagraphRey">
+                <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro provident vero, laboriosam voluptatibus vitae quae consequatur in iste debitis cumque. Sunt, sint a.</p>
+            </div>
+            
+            <div id="pagraphDaniel">
+                <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique debitis! Nostrum ut maxime et eveniet similique temporibus incidunt. Non, saepe aut molestias commodi officia quam iste quis ad ex.</p>
+            </div>
+            
+            <div id="pagraphAdrian">
+                <p class="pagraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium perferendis sint sunt nihil tempore distinctio explicabo sequi iure harum ducimus ea ad nesciunt, incidunt commodi necessitatibus accusamus aliquid sit?</p>
+            </div>
+            
+            <div id="pagraphNicolas">
+                <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam esse inventore saepe numquam dolores non quod recusandae iure nostrum ex quasi nisi quibusdam vero, sit dicta. Porro, similique laboriosam?</p>
+            </div>
+            
+            <div id="contactRey">
+                <button class="contact">Contactar</button>
+            </div>
+            
+            <div id="contactDaniel">
+                <button class="contact">Contactar</button>
+            </div>
+            
+            <div id="contactAdrian">
+                <button class="contact">Contactar</button>
+            </div>
+            
+            <div id="contactNicolas">
+                <button class="contact">Contactar</button>
+            </div>
+            
+            <div id="backAU">
+                <button class="back"><img src="./src/img/back-icon.png" alt="Back icon"></button>
+            </div>  
+        </div>
+    </div>
+    <!-- Contact Us -->
+    <div class="container">
+        <div id="contactUs">
+            <div class="logo">
+                <img src="./src/img/iso-icon.png" alt="">
+            </div>
+
+            <div id="titleCU">
+                <h2 class="title">Contacta con nosotros</h2>
+            </div>
+    
+            <div id="contactContainer">
+                <p>Complete el siguiente formulario</p>
+    
+                <h3 class="subtitle">Tu nombre</h3>
+                <input type="text" placeholder="Tu nombre" id="nameBox">
+    
+                <h3 class="subtitle">Tu correo electrónico</h3>
+                <input type="email" placeholder="Tu correo electrónico" id="emailBox">
+    
+                <h3 class="subtitle">Tu mensaje</h3>
+                <textarea placeholder="Tu mensaje" id="messageBox" cols="60" rows="5"></textarea>
+            </div>
+    
+            <div id="contact">
+                <button class="contact">Contactar</button>
+            </div>
+    
+            <div id="backCU">
+                <button class="back"><img src="./src/img/back-icon.png" alt="Back icon"></button>
+            </div>  
+        </div>
+    </div>
+    <!-- Credits -->
+    <div class="container">
+        <div id="credits">
+            <div class="logo">
+                <img src="./src/img/iso-icon.png" alt="">
+            </div>
+
+            <div id="titleC">
+                <h2 class="title">Creditos</h2>
+            </div>
+    
+            <div id="creatorsContainer">
+                <h3 class="subtitle">Creadores</h3>
+                <p class="credits">
+                    Rey Valentín arias Pérez<br>
+                    Daniel Alejandro Arango Echeverri<br>
+                    Adrián Saldarriaga Marín<br>
+                    Nicolás Vélez Ramírez
+                </p>
+            </div>
+    
+            <div id="thirdPartyContainer">
+                <h3 class="subtitle">Contenido de terceros</h3>
+                <p class="credits">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque officiis mollitia, cupiditate, voluptatum laboriosam sint dolorum,
+                    quaerat reprehenderit provident id modi.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Cumque officiis mollitia, cupiditate, voluptatum laboriosam sint dolorum,
+                    quaerat reprehenderit provident id modi.
+                </p>
+            </div>
+    
+            <div id="backC">
+                <button class="back"><img src="./src/img/back-icon.png" alt="Back icon"></button>
+            </div>
+
+            <div id="thanks">
+                <h4 class="title">¡Gracias por jugar!</h4>
+            </div>
+        </div>
+    </div>
+    <!-- You Died -->
+    <div class="container">
+
+    </div>
+    <!-- You Win -->
+    <div id="youWin">
+        <div class="logo">
+            <img src="./src/img/iso-icon.png" alt="">
+        </div>
+        
+        <div id="titleYW">
+            <h2 class="title">Has ganado</h2>
+        </div>
+        
+        <div id="win">
+            <img src="./src/img/rotate-icon.png" alt="Rotate icon">
+        </div>
+
+        <div id="pagraph">
+            <p id="messageA">Esta experiencia esta diseñada para ser disfrutada de forma horizontal, le recomendamos rotar su dispositivo para poder continuar con la experiencia.</p>
+        </div>
+    </div>
+    <!-- You Died -->
+    <div id="youDied">
+        <div class="logo">
+            <img src="./src/img/iso-icon.png" alt="">
+        </div>
+        
+        <div id="titleYD">
+            <h2 class="title">Has muerto</h2>
+        </div>
+        
+        <div id="rotate">
+            <img src="./src/img/rotate-icon.png" alt="Rotate icon">
+        </div>
+
+        <div id="pagraph">
+            <p id="messageA">Esta experiencia esta diseñada para ser disfrutada de forma horizontal, le recomendamos rotar su dispositivo para poder continuar con la experiencia.</p>
+        </div>
+    </div>
+
+    <ul id="list">
+        <li><a href="./aboutUs.html">About us</a></li>
+        <li><a href="./contactUs.html">Contact us</a></li>
+        <li><a href="./credits.html">Credits</a></li>
+    </ul>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>

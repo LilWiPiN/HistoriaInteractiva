@@ -1,46 +1,306 @@
+/* Estilo general - No coincide dentro de ninguna resolucion*/
 body {
     font-family: sans-serif;
     background-color: red;
-  }
+}
+.title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    margin: auto;
+}
+.subtitle{
+    font-family: 'Pridi', serif;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 5px;
+}
+p{
+    font-family: Montserrat;
+    text-align: justify;
+}
 
-/* Estilo para celulares */
+/* Estilo para celular en horizontal*/
 @media only screen 
 and (max-device-width: 932px)
 and (max-device-height: 430px)
 and (-webkit-min-device-pixel-ratio: 1){
 
     body{
-        background: white;
+        background: whitesmoke;
     }
-    
     .logo{
-        width: 64px;
-        height: 64px;
+        grid-area: 1 / 1 / 2 / 2;
+        display: grid; 
+        place-content: center;
+    }
+    .logo img{
+        width: 48px;
+        height: 48px;
     }
 
-    .menu button{
+    .back{
+        background: whitesmoke;
         border: 1px solid whitesmoke;
-        position:absolute;
-        right: 5%;
+        width: 48px;
+        height: 48px;
+        padding: 0%;
+    }
+    .back img{
+        width: 48px;
+        height: 48px;
+    }
+    .contact{
+        background: lightblue;
+        border: 1px solid whitesmoke;
+        width: 100px;
+        height: 40px;
     }
 
-    .menu img{
-        width: 32px;
-        height: 32px;
+    #advertisement{
+        display: none;
+    }
+
+    /* PROBANDO 
+    container 
+      .container{
+        display: grid;
+        place-items: center;
+        align-items: center;
+        position: absolute; 
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%); 
+     }
+     */
+    
+
+    /* MainScreen */
+    #mainScreen {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        text-align: center;
+        
+        display: none;
+    }  
+    
+    #gameName { grid-area: 2 / 2 / 3 / 5; }
+    #dropDown { 
+        grid-area: 1 / 5 / 2 / 6; 
+        display: grid; 
+        place-content: center; 
+    }
+    #play { grid-area: 3 / 3 / 4 / 4; }
+    
+    #dropDown button{
+        border: 1px solid whitesmoke;
+        background: whitesmoke;
+    }
+    #dropDown img{
+        width: 48px;
+        height: 48px;
+    }
+    #play button{
+        background: whitesmoke;
+        border: 1px solid whitesmoke;
+    }
+    #play img{
+        width: 112px;
+        height: 112px;
+    }
+    #list{
+        display: none;
+    }
+
+    /* About Us */
+    #aboutUs {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, auto); 
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        text-align: center;
+
+        /* display: none; */
+    }
+    #aboutUs .logo{ grid-area: 1 / 2 / 2 / 3; }
+    #titleAU { grid-area: 1 / 3 / 2 / 8; }
+    #backAU { 
+        grid-area: 1 / 8 / 2 / 9;
+        display: grid; 
+        place-content: center; 
+    }
+    #nameRey { grid-area: 2 / 2 / 3 / 3; }
+    #nameDaniel { grid-area: 2 / 4 / 3 / 5; }
+    #nameAdrian { grid-area: 2 / 6 / 3 / 7; }
+    #nameNicolas { grid-area: 2 / 8 / 3 / 9; }
+    #photoRey { grid-area: 3 / 2 / 4 / 3; }
+    #photoDaniel { grid-area: 3 / 4 / 4 / 5; }
+    #photoAdrian { grid-area: 3 / 6 / 4 / 7; }
+    #photoNicolas { grid-area: 3 / 8 / 4 / 9; }
+    #pagraphRey { grid-area: 4 / 2 / 5 / 3; }
+    #pagraphDaniel { grid-area: 4 / 4 / 5 / 5; }
+    #pagraphAdrian { grid-area: 4 / 6 / 5 / 7; }
+    #pagraphNicolas { grid-area: 4 / 8 / 5 / 9; }
+    #contactRey { grid-area: 5 / 2 / 6 / 3; }
+    #contactDaniel { grid-area: 5 / 4 / 6 / 5; }
+    #contactAdrian { grid-area: 5 / 6 / 6 / 7; }
+    #contactNicolas { grid-area: 5 / 8 / 6 / 9; }
+    
+    #aboutUs h3{
+        width: 210px;
+    }
+    .photos{
+        width: 96px;
+        height: 96px;
+    }
+    .pagraphs{
+        font-size: 12px;
+        margin-top: 5px;
+        margin-bottom: 5px;
     }
     
-    .play{
-        width: 64px;
-        height: 64px;
-    }
-
-    .mainMenu{
+    /* Contact Us */
+    #contactUs {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
         text-align: center;
-        width: 932px;
-        background-color: #f4f4f4;
+
+        display: none;
+    }  
+    #titleCU { grid-area: 1 / 2 / 2 / 3; }
+    #backCU { 
+        grid-area: 1 / 3 / 2 / 4; 
+        display: grid; 
+        place-content: center; 
+    }
+    #contactContainer { 
+        grid-area: 2 / 2 / 3 / 3; 
+        background-color: aquamarine;
+        width: 500px;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    #contact { grid-area: 3 / 2 / 4 / 3; }
+    
+    #contactContainer h3{
+        text-align: left;
+        margin-left: 25px;
+    }
+    #contactContainer p{
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #nameBox{
+        width: 445px;
+    }
+    #emailBox{
+        width: 445px;
     }
 
-    .mainMenu button{
-        border: 1px solid whitesmoke;
+    /* Credits */
+    #credits {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        text-align: center;
+
+        display: none;
+    }
+        
+    #titleC { grid-area: 1 / 3 / 2 / 4; }
+    #backC { 
+        grid-area: 1 / 5 / 2 / 6; 
+        display: grid; 
+        place-content: center end; 
+    }
+    #creatorsContainer { grid-area: 2 / 2 / 3 / 3; }
+    #thirdPartyContainer { grid-area: 2 / 4 / 3 / 5; }
+    #thanks { 
+        grid-area: 3 / 2 / 4 / 5;
+        text-align: center;
+        width: ;
+    }
+    #credits .subtitle{
+        width: auto;
+    }
+    #credits p{
+        width: 300px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    /* You Win */
+
+    /* You Died */
+}
+
+/* Estilo para celular en vertical*/
+@media only screen 
+and (max-device-width: 430px)
+and (max-device-height: 932px)
+and (-webkit-min-device-pixel-ratio: 1){
+
+    body {
+        background: whitesmoke;
+    }
+    #mainScreen {
+        display: none;
+    }
+    #list{
+        display: none;
+    }
+    #aboutUs {
+        display: none;
+    }
+    #contactUs {
+        display: none;
+    }
+    #credits {
+        display: none;
+    }
+    #thanks {
+        display: none;
+    }
+    
+    #advertisement {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+    } 
+    #titleA { grid-area: 2 / 1 / 3 / 2; }
+    #rotate { grid-area: 3 / 1 / 4 / 2; }
+    #pagraph { grid-area: 4 / 1 / 5 / 2; }
+
+    #rotate img{
+        width: 96px;
+        height: 96px;
+        transform: scaleX(-1);
+    }
+    #messageA{
+        font-size: 20px;
     }
 }
+
+
+
+
+
+
+
+
+
