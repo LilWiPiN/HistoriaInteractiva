@@ -84,7 +84,7 @@ and (-webkit-min-device-pixel-ratio: 1){
         grid-row-gap: 0px;
         text-align: center;
         
-        display: none;
+        /* display: none; */
     }  
     
     #gameName { grid-area: 2 / 2 / 3 / 5; }
@@ -124,7 +124,7 @@ and (-webkit-min-device-pixel-ratio: 1){
         grid-row-gap: 0px;
         text-align: center;
 
-        /* display: none; */
+        display: none;
     }
     #aboutUs .logo{ grid-area: 1 / 2 / 2 / 3; }
     #titleAU { grid-area: 1 / 3 / 2 / 8; }
@@ -228,7 +228,7 @@ and (-webkit-min-device-pixel-ratio: 1){
     #thanks { 
         grid-area: 3 / 2 / 4 / 5;
         text-align: center;
-        width: ;
+        width: auto;
     }
     #credits .subtitle{
         width: auto;
@@ -240,8 +240,89 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
 
     /* You Win */
+    #youWin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        display: none; 
+    } 
+        #titleYW { grid-area: 1 / 1 / 2 / 2; }
+        #win { grid-area: 2 / 1 / 3 / 2; }
+        #continue { grid-area: 3 / 1 / 4 / 2; }
+
+        #win img{
+            width: 128px;
+            height: 128px;
+        }
 
     /* You Died */
+    #youDied {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        display: none;
+    } 
+    #titleYD { grid-area: 1 / 1 / 2 / 2; }
+    #died { grid-area: 2 / 1 / 3 / 2; }
+    #retry { grid-area: 3 / 1 / 4 / 2; }
+
+    #died img{
+        width: 128px;
+        height: 128px;
+    }
+
+    /* Tip-Hint */
+    .hint {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        display: none; 
+        }
+        #exclamation {
+            grid-area: 1 / 1 / 2 / 2;
+            display: grid; 
+            place-content: center start; 
+            margin-left: 10px;
+        }
+        #titleT { 
+            grid-area: 1 / 1 / 2 / 2; 
+            border: 5px solid black;
+            height: 50px;
+        }
+        .hintBox { grid-area: 2 / 1 / 3 / 2; }
+        #backC { grid-area: 3 / 1 / 4 / 2; }
+
+        #exclamation img {
+            width: 48px;
+            height: 48px;
+        }
+        #titleT h3{
+            text-align: center;
+            font-size: 36px;
+        }
+        #hintText{
+            width: 400px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 }
 
 /* Estilo para celular en vertical*/
@@ -269,6 +350,15 @@ and (-webkit-min-device-pixel-ratio: 1){
         display: none;
     }
     #thanks {
+        display: none;
+    }
+    #youWin {
+        display: none;
+    }
+    #youDied {
+        display: none;
+    }
+    .hint {
         display: none;
     }
     
