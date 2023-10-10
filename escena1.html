@@ -5,13 +5,114 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="./src/css/main.css">
-
+    <style>
+        body {
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-image: url(src/img/Fuera.jpeg);
+        }
+      
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            width: 100%;
+            bottom: 10px;
+        }
+      
+        .button {
+          width: 100px;
+          height: 100px;
+          margin: 10px;
+          border:none;
+        }
+      
+        #imagen1 {
+          left: auto;
+          background-color: transparent;
+        }
+      
+        #imagen2 {
+          bottom: 10px;
+          background-color: transparent;
+        }
+      
+        #imagen3 {
+          right: 10px;
+          background-color: transparent;
+        }
+      </style>
 </head>
 <body>
-    <div id="backCU">
-        <button class="back"><a href="index.html"><img src="./src/img/back-icon.png" alt="Back icon"></a></button>
-    </div> 
-    <button><a href="win.html">Win</a></button>
-    <button><a href="die.html">Die</a></button>
-</body>
+    <div class="button-container">
+      <button id="imagen1" class="button"><img src="src/img/next-iconleft.png" width="100%"></button>
+      <button id="imagen2" class="button"><img src="src/img/next-icondown.png" width="100%"></button>
+      <button id="imagen3" class="button"><img src="src/img/next-iconright.png" width="100%"></button>
+      <button id="imagen3" class="button"><img src="src/img/next-iconup.png" width="100%"></button>
+    </div>
+  
+    <script>
+      var boton1 = document.getElementById('imagen1');
+      var boton2 = document.getElementById('imagen2');
+      var boton3 = document.getElementById('imagen3');
+      var boton4 = document.getElementById('imagen4');
+      var body = document.body;
+  
+      var imagen1URL;
+      var imagen2URL;
+      var imagen3URL;
+      var imagen4URL;
+
+    if (body.style.backgroundImage = 'url(src/img/Fuera.jpeg)'){
+        imagen1URL = 'src/img/Dentro1.jpeg';
+        imagen2URL = 'src/img/Dentro2.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Dentro1.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Dentro2.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Cambiar.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Cambiar.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Cambiar.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Cambiar.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    } else if (body.style.backgroundImage = 'url(src/img/Cambiar.jpeg)'){
+        imagen1URL = 'src/img/Cambiar.jpeg';
+        imagen2URL = 'src/img/Cambiar.jpeg';
+        imagen3URL = 'src/img/Cambiar.jpeg';
+    }
+
+      boton1.addEventListener('click', function () {
+        body.style.backgroundImage = 'url(' + imagen1URL + ')';
+      });
+  
+      boton2.addEventListener('click', function () {
+        body.style.backgroundImage = 'url(' + imagen2URL + ')';
+      });
+  
+      boton3.addEventListener('click', function () {
+        body.style.backgroundImage = 'url(' + imagen3URL + ')';
+      });
+
+      boton4.addEventListener('click', function () {
+        body.style.backgroundImage = 'url(' + imagen4URL + ')';
+      });
+    </script>
+  </body>
 </html>
