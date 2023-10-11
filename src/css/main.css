@@ -695,29 +695,29 @@ and (-webkit-min-device-pixel-ratio: 1){
 #div1escena{
     width: 10%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 90%;
 }
 
 #div2escena{
-    width: 80%;
+    width: 10%;
     position: absolute;
-    top: 90%;
-    left: 50%;
+    top: 80%;
+    left: 45%;
 }
 
 #div3escena{
     width: 10%;
     position: absolute;
-    top: 50%;
-    left: 10%;
+    top: 40%;
+    left: 0%;
 }
 
 #div4escena{
     width: 10%;
     position: absolute;
-    top: 10%;
-    left: 50%;
+    top: 0%;
+    left: 45%;
 }
 
 
