@@ -25,9 +25,11 @@ body{
     background: whitesmoke;
 }
 .logo{
-    grid-area: 1 / 1 / 2 / 2;
-    display: grid; 
-    place-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
 .logo img{
     width: 48px;
