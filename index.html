@@ -23,17 +23,51 @@
 
     <style>
         body {
-          background-image: url('src/img/main_screen.png');
+          background-image: url('src/img/thief.png');
           background-size: cover;
           background-repeat: no-repeat;
           background-attachment: fixed;
         }
+        #play{
+            margin-top: 80px;
+        }
+
+        .menu_container{
+            background-color: white;
+            border: 3px solid black;
+            width: 150px;
+        }
+
+        .menu_container ul{
+            list-style: none;
+            padding-inline-start: 25px;
+        }
+
+        .first_item_menu{
+            padding-bottom: 10px;
+        }
+
+        .menu_container a{
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+
     </style>
 </head>
 <body>
 
-    <button><a href="contact.html">Contact us</a></button>
-    <button><a href="about.html">About us</a></button>
+    <div class="menu_container">
+        <ul>
+            <li class="first_item_menu">
+                <a href="about.html">About us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact us</a>
+            </li>
+        </ul>
+    </div>
+
     <!-- Advertisement -->
     <div id="advertisement">
         <div class="logo">
@@ -54,19 +88,19 @@
     </div>
     <!-- Main Screen -->
     <div id="mainScreen">
-        <div class="logo">
+        <!-- <div class="logo">
             <img src="./src/img/iso-icon.png" alt="">
-        </div>
-        <div id="gameName">
-            <h1 class="title">Historia interactiva THIEF</h1>
+        </div> -->
+        <div id="gameName" style="color: white;">
+            <h1 class="title">.</h1>
         </div>
 
-        <div id="dropDown">
+        <!-- <div id="dropDown">
             <button style="background-color: transparent; border: none;"><img src="./src/img/menu-icon.png" alt="Dropdown button"></button>
-        </div>
+        </div> -->
 
         <div id="play">
-            <button style="background-color: transparent; border: none;"><a href="escenas/escena1.html"><img src="./src/img/play-icon.png" alt="Play button"></a></button>
+            <button style="background-color: transparent; border: none;"><a href="escenas/escena1.html"><img src="./src/img/play_icon_2.png" alt="Play button"></a></button>
         </div>
     </div>
     <!-- About Us
