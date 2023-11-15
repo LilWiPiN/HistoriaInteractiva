@@ -3,28 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro</title>
+    <title>Escena Principal</title>
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <style>
       
+      @media (max-device-width: 600px)
+      {
+        .button {
+        display: none;
+      }
+
+      .button2{
+        display: none;
+      }
+    }
       body {
-        background-image: url('../src/img/museo.png');
+        background-image: url('../src/img/museo_2.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-
-      .skip_hint_section img{
-        position: fixed;
-        right: 0;
-        width: 19%;
+    
+      .button3{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
       }
-
     </style>
 </head>
 <body>
-  <div class="skip_hint_section">
-    <a href="escena2.html"><img src="../src/img/skip.png" alt="Skip"></a>
+  <div id="div3escena">
+    <a href="escena2.html"><button class="button3"><img src="../src/img/next-iconleft.png" width="100%"></button></a>
+  </div>
+    <div id="div1escena">
+    <a href="Princ_Derecha.html"><button class="button3"><img src="../src/img/next-iconright.png" width="100%"></button></a>
   </div>
   
   <div id="advertisement">

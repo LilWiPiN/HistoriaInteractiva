@@ -7,53 +7,23 @@
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <style>
       body {
-        background-image: url('../src/img/museo_4.png');
+        background-image: url('../src/img/MuseoChat4.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-    
-      .button-container {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-      }
-    
-      .button {
-        right: auto;
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
+
+      .skip_hint_section img{
+        position: fixed;
+        right: 0;
+        width: 19%;
       }
 
-      .button2{
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-      }
-
-      .button3{
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-      }
     </style>
 </head>
 <body>
-  <div id="div4escena">
-    <a href="escena6.html"><button class="button"><img src="../src/img/next-iconup.png" width="100%"></button></a>
-  </div>
-    <div id="div2escena">
-    <a href="escena7.html"><button class="button2"><img src="../src/img/next-icondown.png" width="100%"></button></a>
-  </div>
-    <div id="div3escena">
-    <a href="escena2.html"><button class="button3"><img src="../src/img/next-iconleft.png" width="100%"></button></a>
-  </div>
-    <div id="div1escena">
-    <a href="escena8.html"><button class="button3"><img src="../src/img/next-iconright.png" width="100%"></button></a>
+  <div class="skip_hint_section">
+    <a href="Principal.html"><img src="../src/img/skip.png" alt="Skip"></a>
   </div>
 </body>
 </html>
