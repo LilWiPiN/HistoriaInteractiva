@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escena Principal Izquierda Izquierda</title>
+    <link rel="stylesheet" type="text/css" href="../src/css/main.css">
+    <style>
+      body {
+        background-image: url('../src/img/museo_3.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    
+      .button-container {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+      }
+    
+      .button {
+        right: auto;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+      }
+
+      .button2{
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+      }
+    </style>
+</head>
+<body>
+  <div id="div1escena">
+    <a href="Princ_Izquierda.html"><button class="button"><img src="../src/img/next-iconright.png" width="100%"></button></a>   
+  </div>
+  <div id="div2escena">
+    <a href="Princ_Izq_Izq_cuadro.html"><button class="button"><img src="../src/img/next-icondown.png" width="100%"></button></a>    
+  </div>
+  <div id="div3escena">
+    <a id="SecretDoor"><button class="button"><img src="../src/img/next-iconleft.png" width="100%"></button></a>    
+  </div>
+
+  <script>
+    const SDoor = document.getElementById("SecretDoor");
+
+    let elementsGame = localStorage.getItem("Princ_game_elements");
+    
+    SDoor.addEventListener("click", () => {
+      if(elementsGame >= 2){
+        alert("Felicidades cuentas con todos los elementos necesarios para entrar al CUARTO SECRETO!");
+        location.href = "Princ_Puerta_Secreta.html";
+      }
+      else{
+        alert("Parece ser que esta puerta se encuentra cerrada, es mejor que sigas buscando...");
+      }
+    })
+  </script>
+</body>
+</html>

@@ -7,40 +7,23 @@
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <style>
       body {
-        background-image: url('../src/img/museo_obra_robada.png');
-        background-size: cover;
+        background-image: url('../src/img/MuseoChat2.png');
+        background-size: contain;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
     
-      .button-container {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-      }
-    
-      .button {
-        right: auto;
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
+      .skip_hint_section img{
+        position: fixed;
+        right: 0;
+        width: 19%;
       }
 
-      .button2{
-        border: none;
-        cursor: pointer;
-        background-color: transparent;
-        border: none;
-      }
     </style>
 </head>
 <body>
-  <div id="div4escena">
-    <a href="escena1.html"><button class="button"><img src="../src/img/next-iconup.png" width="100%"></button></a>
-  </div>
-    <div id="div1escena">
-    <a href="escena4.html"><button class="button2"><img src="../src/img/next-iconright.png" width="100%"></button></a>
+  <div class="skip_hint_section">
+    <a href="escena4.html"><img src="../src/img/skip.png" alt="Skip"></a>
   </div>
 </body>
 </html>

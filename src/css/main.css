@@ -2,6 +2,7 @@
 body {
     font-family: sans-serif;
     background-color: whitesmoke;
+    background-position: center;
 }
 .title{
     font-family: 'Bebas Neue', sans-serif;
@@ -35,8 +36,8 @@ body{
 }
 
 .back{
-    background: whitesmoke;
-    border: 1px solid whitesmoke;
+    background: transparent;
+    border: 0px transparent;
     width: 48px;
     height: 48px;
     padding: 0%;
@@ -342,8 +343,8 @@ and (-webkit-min-device-pixel-ratio: 1){
     }
 
     .back{
-        background: whitesmoke;
-        border: 1px solid whitesmoke;
+        background: transparent;
+        border: 0px transparent;
         width: 48px;
         height: 48px;
         padding: 0%;
@@ -717,12 +718,4 @@ and (-webkit-min-device-pixel-ratio: 1){
     top: 0%;
     left: 45%;
 }
-
-
-
-
-
-
-
-
 

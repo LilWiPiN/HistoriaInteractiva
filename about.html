@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About us</title>
     <!-- <link rel="stylesheet" type="text/css" href="./src/css/main.css">
 	<meta charset="utf-8">
 	<meta name="keywords" content="historia interactiva, interactive story, videojuego de aventura, adventure game"> -->
@@ -15,88 +15,171 @@
 	<link rel="icon" href="./src/img/logo-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pridi&display=swap" rel="stylesheet"> -->
+    <link rel="icon" href="./src/img/logo-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+          background-image: url('src/img/aboutUs.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          font-family: 'Bebas Neue', sans-serif;
+        }
+
+        .top_container{
+            display: flex;
+        }
+
+        .logo{
+            width: 84%;
+            padding-left: 40px;
+            padding-top: 40px;
+        }
+
+        .logo img{
+            width: 48px;
+        }
+
+        #backAU{
+            padding-top: 40px;
+            right: 0;
+        }
+
+        #backAU img{
+            width: 50px;
+        }
+
+        .mid_zone_container{
+            margin-top: 20px;
+            margin-bottom: 20px;
+            display: flex;
+        }
+
+        .profile{
+            text-align: center;
+        }
+
+        .profile img{
+            width: 50%;
+        }
+
+        #photo{
+            text-align: center;
+        }
+
+        .profile h3{
+            background-color: white;
+            border: 1px;
+            border-radius: 7px;
+            text-align: center;
+        }
+
+        #nameDaniel{
+            display: inline-flex;
+        }
+
+        #nameJustified{
+            width: 75%;
+            text-align: center;
+            display: inline-block;
+        }
+
+        #paragraphs{
+            background-color: white;
+            border: 1px;
+            border-radius: 20px;
+            margin: 8px;
+        }
+
+        .contact{
+            background-color: white;
+            border: 1px solid black;
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(10, 99, 94);
+        }
+
+    </style>
+
 </head>
 <body>
     <div id="aboutUs">
-        <div class="logo">
-            <img src="./src/img/iso-icon.png" alt="">
+
+        <div class="top_container">
+            <div class="logo">
+                <img src="./src/img/iso-icon.png" alt="">
+            </div>
+    
+            <div id="backAU">
+                <a href="index.html"><img src="./src/img/back-icon.png" alt="Back icon"></a>
+            </div>  
         </div>
 
-        <div id="titleAU">
-            <h2 class="title">Sobre nosotros</h2>
-        </div>
+        <div class="mid_zone_container">
+            <div class="profile">
+                <div id="photo">
+                    <img src="./src/img/place-holder-icon.png" class="photos" alt="photo Rey Valentín arias Pérez photo">
+                </div>
+                <div id="nameJustified">
+                    <h3 class="subtitle">Rey Valentín Arias Pérez</h3>
+                </div>
+                <div id="paragraphs">
+                    <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro.</p>
+                </div>
+                <div id="contactRey">
+                    <a class="contact" target="_blank" href="https://www.instagram.com/adrisaldam">Contactar</a>
+                </div>
+            </div>
 
-        <div id="nameRey">
-            <h3 class="subtitle">Rey Valentín Arias Pérez</h3>
+            <div class="profile">
+                <div id="photo">
+                    <img src="./src/img/place-holder-icon.png" class="photos" alt="Daniel Alejandro Arango Echeverri photo">
+                </div>
+                <div id="nameDaniel">
+                    <h3 class="subtitle">Daniel Alejandro Arango Echeverri</h3>
+                </div>
+                <div id="paragraphs">
+                    <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro.</p>
+                </div>
+                <div id="contactDaniel">
+                    <a class="contact" target="_blank" href="https://www.instagram.com/adrisaldam">Contactar</a>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div id="photo">
+                    <img src="./src/img/eircxd.png" class="photos" alt="Adrián Saldarriaga Marín photo">
+                </div>
+                <div id="nameJustified">
+                    <h3 class="subtitle">Adrián Saldarriaga Marín</h3>
+                </div>
+                <div id="paragraphs">
+                    <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro.</p>
+                </div>
+                <div id="contactAdrian">
+                    <a class="contact" target="_blank" href="https://www.instagram.com/adrisaldam">Contactar</a>
+                </div>
+            </div>
+
+            <div class="profile" style="margin-right: 10px;">
+                <div id="photo">
+                    <img src="./src/img/place-holder-icon.png" class="photos" alt="Nicolás Vélez Ramírez photo">
+                </div>
+                <div id="nameJustified">
+                    <h3 class="subtitle">Nicolás Vélez Ramírez</h3>
+                </div>
+                <div id="paragraphs">
+                    <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro.</p>
+                </div>
+                <div id="contactNicolas">
+                    <a class="contact" target="_blank" href="https://www.instagram.com/adrisaldam">Contactar</a>
+                </div>
+            </div>
         </div>
-        
-        <div id="nameDaniel">
-            <h3 class="subtitle">Daniel Alejandro Arango Echeverri</h3>
-        </div>
-        
-        <div id="nameAdrian">
-            <h3 class="subtitle">Adrián Saldarriaga Marín</h3>
-        </div>
-        
-        <div id="nameNicolas">
-            <h3 class="subtitle">Nicolás Vélez Ramírez</h3>
-        </div>
-        
-        <div id="photoRey">
-            <img src="./src/img/place-holder-icon.png" class="photos" alt="photo Rey Valentín arias Pérez photo">
-        </div>
-        
-        <div id="photoDaniel">
-            <img src="./src/img/place-holder-icon.png" class="photos" alt="Daniel Alejandro Arango Echeverri photo">
-        </div>
-        
-        <div id="photoAdrian">
-            <img src="./src/img/place-holder-icon.png" class="photos" alt="Adrián Saldarriaga Marín photo">
-        </div>
-        
-        <div id="photoNicolas">
-            <img src="./src/img/place-holder-icon.png" class="photos" alt="Nicolás Vélez Ramírez photo">
-        </div>
-        
-        <div id="pagraphRey">
-            <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus veniam repellat rerum voluptatem rem distinctio porro provident vero, laboriosam voluptatibus vitae quae consequatur in iste debitis cumque. Sunt, sint a.</p>
-        </div>
-        
-        <div id="pagraphDaniel">
-            <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, similique debitis! Nostrum ut maxime et eveniet similique temporibus incidunt. Non, saepe aut molestias commodi officia quam iste quis ad ex.</p>
-        </div>
-        
-        <div id="pagraphAdrian">
-            <p class="pagraphs">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi praesentium perferendis sint sunt nihil tempore distinctio explicabo sequi iure harum ducimus ea ad nesciunt, incidunt commodi necessitatibus accusamus aliquid sit?</p>
-        </div>
-        
-        <div id="pagraphNicolas">
-            <p class="pagraphs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam esse inventore saepe numquam dolores non quod recusandae iure nostrum ex quasi nisi quibusdam vero, sit dicta. Porro, similique laboriosam?</p>
-        </div>
-        
-        <div id="contactRey">
-            <button class="contact">Contactar</button>
-        </div>
-        
-        <div id="contactDaniel">
-            <button class="contact">Contactar</button>
-        </div>
-        
-        <div id="contactAdrian">
-            <button class="contact">Contactar</button>
-        </div>
-        
-        <div id="contactNicolas">
-            <button class="contact">Contactar</button>
-        </div>
-        
-        <div id="backAU">
-            <button class="back"><a href="index.html"><img src="./src/img/back-icon.png" alt="Back icon"></a></button>
-        </div>  
     </div>
 </body>
 </html>
