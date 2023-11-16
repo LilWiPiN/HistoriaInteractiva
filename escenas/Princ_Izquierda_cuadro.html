@@ -3,24 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escena Principal Derecha Cuadro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Escena Principal Izquierda Cuadro</title>
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <style>
       body {
-        background-image: url('../src/img/museo_obra_robada_2.png'); 
+        background-image: url('../src/img/museo_obra_robada.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
     
-      .button-container {
-        position: absolute;
-        left: 20px;
-        top: 20px;
-      }
-
-      .button2{
+      .button {
+        right: auto;
         border: none;
         cursor: pointer;
         background-color: transparent;
@@ -31,8 +25,8 @@
         width: 50px;
         transform: rotate(-82deg);
         position: fixed;
-        left: 239px;
-        top: 310px;
+        right: 290px;
+        top: 300px;
       }
 
       #popup {
@@ -68,24 +62,22 @@
           right: 10px;
           font-size: 34px;
       }
-        
     </style>
 </head>
 <body>
-
-  <div id="div2escena">
-    <a href="Princ_Derecha.html"><button class="button2"><img src="../src/img/next-icondown.png" width="100%"></button></a>
+  <div id="div4escena">
+    <a href="Princ_Izquierda.html"><button class="button"><img src="../src/img/next-iconup.png" width="100%"></button></a>
   </div>
 
   <div class="element_key">
-    <img id="show-popup" src="../src/img/llave.png" alt="La llave">
+    <img id="show-popup" src="../src/img/huella.png" alt="La llave">
   </div>
 
   <div id="overlay"></div>
 
   <div id="popup">
       <span id="close-btn">&times;</span>
-      <p>Encontraste la llave secreta!</p>
+      <p>Encontraste la huella secreta!</p>
       <p id="contElements">Llevas ${totalElements}/2 elementos encontrados</p>
   </div>
   <script src="../src/js/mainGame.js"></script>
