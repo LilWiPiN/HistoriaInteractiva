@@ -20,4 +20,12 @@ function closeVent() {
     popup.style.display = 'none';
 }
 
+function nextWindow() {
+    location.href = "Oficina_3.html"
+}
+
+function nextWindow2() {
+    location.href = "TheEnd.html"
+}
+
 document.getElementById("close-btn").addEventListener("click", closeVent);

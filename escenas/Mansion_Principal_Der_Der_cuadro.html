@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escena Oficina 2</title>
+    <title>Escena Mansion Derecha</title>
     <link rel="stylesheet" type="text/css" href="../src/css/main.css">
     <style>
       body {
-        background-image: url('../src/img/Computador.jpg');
-        background-size: contain;
+        background-image: url('../src/img/MansionCuadro1.jpg');
+        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
@@ -19,20 +19,12 @@
         left: 20px;
         top: 20px;
       }
-
-      .button2{
+    
+      .button3{
         border: none;
         cursor: pointer;
         background-color: transparent;
         border: none;
-      }
-
-      .element_key img{
-        width: 50px;
-        transform: rotate(-82deg);
-        position: fixed;
-        right: 382px;
-        top: 155px;
       }
 
       #popup {
@@ -71,19 +63,18 @@
     </style>
 </head>
 <body>
-  <div id="div2escena">
-    <a href="Oficina_1.html"><button class="button2"><img src="../src/img/next-icondown.png" width="100%"></button></a>
+  <div id="div3escena">
+    <a href="Mansion_Principal_Der_Derecha.html"><button class="button3"><img src="../src/img/next-iconleft.png" width="100%"></button></a>
   </div>
-
-  <div class="element_key">
-    <img id="show-popup" src="../src/img/huella.png" alt="Huella">
+    <div class="element_key" id="div1escena">
+    <a id="show-popup"><button class="button3"><img src="../src/img/next-iconright.png" width="100%"></button></a>
   </div>
 
   <div id="overlay"></div>
 
   <div id="popup">
-    <span onclick="nextWindow()">&times;</span>
-    <p onclick="nextWindow()">Examinando la huella...........</p>
+    <span onclick="nextWindow2()">&times;</span>
+    <p onclick="nextWindow2()">Oh!? ¿Que ha sido ese sonido? ... ¿Hay alguien ahí? ... <br> Eres tú!!!!</p>
   </div>
   <script src="../src/js/mainGame.js"></script>
 </body>

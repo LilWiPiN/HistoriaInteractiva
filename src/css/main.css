@@ -2,6 +2,7 @@
 body {
     font-family: sans-serif;
     background-color: whitesmoke;
+    background-position: center;
 }
 .title{
     font-family: 'Bebas Neue', sans-serif;
@@ -717,12 +718,4 @@ and (-webkit-min-device-pixel-ratio: 1){
     top: 0%;
     left: 45%;
 }
-
-
-
-
-
-
-
-
 
