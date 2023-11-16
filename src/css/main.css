@@ -184,6 +184,7 @@ container
     width: 500px;
     height: 300px;
     margin-bottom: 10px;
+    text-align: center;
 }
 #contact { grid-area: 3 / 2 / 4 / 3; }
 
